@@ -1,8 +1,4 @@
 """
-Created on Thu May 08 12:07:14 2020
-CSE 30 Spring 2020 Program 3 starter code
-@author: Fahim
-
 Name: John Mai
 Assignment: Programming Assignment 3
 Date: 5/19/2020
@@ -10,7 +6,6 @@ Due Date: Monday 5/25/2020
 """
 
 '''
-Notes from lecture:
 (initial velocity) V0x = V0cosTheta // V0y = V0sinTheta
 (gravity) Vgx = 0 // Vgy = gt -- g = 9.8m/s^2 // t = time ie velocity increases w time
 (net velocity) 
@@ -58,9 +53,6 @@ class Particle:
         self.firework_Lifetime = int(firework_Lifetime * random.uniform(1, 1))
         self.time = 1
 
-    """movement of recursive firework """
-    """1/2 gt ^2"""
-    """(1/2) * .0000098 * self.time ** 2"""
     def update(self):
         if self.recursive_Vel[0] == 0:
             trail = len(self.y) - 1
